@@ -68,6 +68,7 @@ body {
 .hero h1 { margin: 0 0 12px 0; font-size: 34px; }
 .hero p { max-width: 720px; margin: 0 0 18px 0; color: #f4f4f4; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+text-align: left;
 
 /* Buttons */
 .btn {
