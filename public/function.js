@@ -57,11 +57,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showPopup(message, type) {
     popupMessage.textContent = message;
-    popup.classList.remove("success", "error", "hidden");
-    popup.classList.add(type);
+    // remove old state
+    popup.classList.remove("success", "error", "show");
+    // add new state + make visible
+    popup.classList.add(type, "show");
 
-    setTimeout(() => popup.classList.add("hidden"), 6000);
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 6000);
   }
 
-  popup.addEventListener("click", () => popup.classList.add("hidden"));
+  popup.addEventListener("click", () => popup.classList.remove("show"));
 });
