@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Franchise – Jollibee</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="index.html" aria-label="Home">Jollibee</a>
+      <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Our Products</a>
+        <a href="global.html">Global Presence</a>
+        <a href="values.html">Our Values</a>
+        <a href="franchise.html">Franchise</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="franchise" class="section alt">
+      <div class="container">
+        <h2>Franchise Opportunities</h2>
+        <p>Be part of the Jollibee family and bring joy to your community. Explore franchise opportunities and grow with us.</p>
+
+        <div class="grid franchise-highlights">
+          <article class="card">
+            <h3>Proven Business Model</h3>
+            <p>Over 40 years of success.</p>
+          </article>
+          <article class="card">
+            <h3>Strong HQ Support</h3>
+            <p>Guidance, training, and franchisee support.</p>
+          </article>
+          <article class="card">
+            <h3>Comprehensive Support</h3>
+            <p>Site selection, operations training, and marketing.</p>
+          </article>
+          <article class="card">
+            <h3>Marketing Assistance</h3>
+            <p>National and local programs with promo materials.</p>
+          </article>
+        </div>
+
+        <div id="confirmation-popup" class="hidden">
+          <p id="confirmation-message"></p>
+        </div>
+
+        <form class="franchise-form" id="franchiseForm" novalidate>
+          <h3>Start Your Franchise Journey</h3>
+          <div class="form-grid">
+            <label>
+              Full Name
+              <input type="text" name="full_name" placeholder="Juan Dela Cruz" required />
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" placeholder="juan@example.com" required />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone_number" placeholder="+63 912 345 6789" required />
+            </label>
+            <label>
+              Preferred Location
+              <input type="text" name="preferred_location" placeholder="City, Country" required />
+            </label>
+            <label class="full">
+              Tell us about your interest
+              <textarea name="interest" rows="4" placeholder="Share your experience and why you want to franchise." required></textarea>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Application</button>
+          <p class="form-note" id="form-note" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2025 Jollibee Foods Corporation</small>
+    </div>
+  </footer>
+
+  <!-- make sure this path is /public/function.js -->
+  <script src="function.js"></script>
+</body>
+</html>
